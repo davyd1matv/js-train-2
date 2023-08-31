@@ -2,7 +2,7 @@
 
 // Створюємо функцію з назвою calculateExpression, яка приймає один аргумент expression
 function calculateExpression(expression) {
-  if (isNaN(expression)) {
+  if (typeof expression === "string") {
     return eval(expression);
   } else {
     return "Argument is not a string";
